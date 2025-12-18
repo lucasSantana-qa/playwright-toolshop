@@ -15,7 +15,7 @@ test('deve realizar login', async ({request}) => {
     expect(body.token_type).toBe('bearer')
 })
 
-test.only('deve retornar erro ao enviar requisição com credenciais inválidas', async ({request}) => {
+test('deve retornar erro ao enviar requisição com credenciais inválidas', async ({request}) => {
     const user = user_data.invalid as LoginUser
     const response = await loginApi(request, user)
     const body = await response.json()
