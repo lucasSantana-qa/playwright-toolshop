@@ -1,4 +1,10 @@
 {
-  "email": "admin@practicesoftwaretesting.com",
-  "password": "welcome01"
+  "valid": {
+    "email": "admin@practicesoftwaretesting.com",
+    "password": "welcome01"
+  },
+  "invalid": {
+    "email": "teste@invalidddd.com",
+    "password": "welcome01"    
+  }
 }
