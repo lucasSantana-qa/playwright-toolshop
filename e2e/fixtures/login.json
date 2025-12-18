@@ -6,5 +6,9 @@
   "invalid": {
     "email": "teste@invalidddd.com",
     "password": "welcome01"    
+  },
+  "invalid_no_email": {
+    "email": "",
+    "password": "welcome01"
   }
 }
