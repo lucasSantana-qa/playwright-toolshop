@@ -21,9 +21,22 @@ jobs:
 
     - name: Run Playwright API tests
       run: npx playwright test api
-    - uses: actions/upload-artifact@v4
+
+    - name: Upload API test results
+      uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: playwright-report
+        name: playwright-API-Test-report
+        path: playwright-report/
+        retention-days: 30
+      
+    - name: Run Playwright UI tests
+      run: npx playwright test ui
+
+    - name: Upload UI test results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: playwright-UI-Test-report
         path: playwright-report/
         retention-days: 30
