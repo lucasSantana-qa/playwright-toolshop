@@ -13,7 +13,7 @@ export class LoginPage {
     }
 
     async validarCampoObrigatorioLogin() {
-        await expect(this.page.locator("//div[@id='password']/div")).toHaveText("Password is required")
+        await expect(this.page.locator("//div[@id='password-error']")).toHaveText("Password is required")
         await expect(this.page.locator("data-test=password")).toHaveCSS("border-color", "rgb(220, 53, 69)")        
     }
 }
