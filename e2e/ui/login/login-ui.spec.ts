@@ -8,7 +8,7 @@ test.beforeEach(({ page }) => {
     loginPage = new LoginPage(page)
 })
 test.describe('Validar campos obrigatórios', () => {
-    test.only('deve validar mensagem de campos obrigatórios no login', async ({ page }) => {
+    test('deve validar mensagem de campos obrigatórios no login', async ({ page }) => {
         await page.goto(`${process.env.BASE_URL_UI}`)
         await page.click("data-test=nav-sign-in")
         await page.click("data-test=login-submit")
