@@ -10,5 +10,9 @@
   "invalid_no_email": {
     "email": "",
     "password": "welcome01"
+  },
+  "invalid_no_passwd": {
+    "email": "admin@practicesoftwaretesting.com",
+    "password": ""
   }
 }
